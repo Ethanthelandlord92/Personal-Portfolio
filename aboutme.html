@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Nguyen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f1e9;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3498db, #2ecc71);
+            padding: 3rem 0;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            opacity: 0.1;
+            transform: rotate(30deg);
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        section {
+            background: #fff;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #2ecc71;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: #fefefe;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .project-card h3 {
+            padding: 1rem;
+            color: #2c3e50;
+        }
+
+        .project-card p {
+            padding: 0 1rem 1rem;
+        }
+
+        .project-card a {
+            display: block;
+            padding: 0.5rem 1rem;
+            background: #2ecc71;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 1rem 1rem;
+            border-radius: 5px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+
+        .skill-item {
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #2ecc71;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="RedPlumber02.jpeg" alt="Red Plumber Profile Picture" class="profile-img">
+        <h1>Ethan Nguyen</h1>
+        <p>Gamer | Game Developer | YouTuber</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am Ethan Nguyen. I am a student at Saddleback College, studying computer science and game development. I enjoy playing video games, watching anime movies and TV shows, and YouTube videos. I also post several videos of my gaming experience on YouTube.</p>
+            <p>My favorite video games are Minecraft and Roblox, where I enjoy building things while adventure throughout the game. I also love building 3d creatures by using Blockbench software.</p>
+<p>My goal is to learn as much game design as I can so I can create more sophisticated games in the future.<p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="htmlwebsite.jpeg" alt="HTML Class" class="project-img">
+                    <h3>htmlclass.github.io</h3>
+                    <p>My first Github Respository</p>
+
+                    <p></p>
+                    <a href="https://github.com/Ethanthelandlord92/htmlclass.github.io" target="_blank">View Repository</a>
+                </div>
+            </section>
+            </div>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-item">Python Programming</span>
+                <span class="skill-item">C++ Programming</span>
+                <span class="skill-item">HTML Web Designing</span>
+                <span class="skill-item">CSS Website Style</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Ethan Nguyen. All rights reserved.</p>
+        <p><a href="mailto:ethanthelandlord92@gmail.com">ethanthelandlord92@gmail</a> | <a href="https://github.com/Ethanthelandlord92">GitHub</a>
+</p>
+    </footer>
+</body>
+</html>
